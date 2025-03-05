@@ -1,0 +1,57 @@
+<!-- HTML CODE --!>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <header>
+          <nav>
+            <ul class="nav-link">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+  </div>
+
+/* CSS CODE */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #444;
+  font-family: sans-serif;
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  float: right;
+}
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link li {
+  list-style: none;
+  margin-right: 20px;
+  position: relative;
+  display: inline-block;
+}
+.nav-link li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
