@@ -1,7 +1,4 @@
 <!-- HTML CODE --!>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-12">
         <header>
           <nav>
             <ul class="nav-link">
@@ -13,45 +10,34 @@
             </ul>
           </nav>
         </header>
-      </div>
-    </div>
-  </div>
 
 /* CSS CODE */
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+header {
+  background-color: #f0f0f0;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+ul {
+  /*No need for display: flex here; it's the *header* that controls the overall layout */
 }
 
-body {
-  color: #444;
-  font-family: sans-serif;
-  width: 100%;
-}
-header {
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 80px;
-  float: right;
-}
-.nav-link {
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
-.nav-link li {
-  list-style: none;
-  margin-right: 20px;
-  position: relative;
-  display: inline-block;
+nav li {
+  margin: 0 30px;
 }
-.nav-link li a {
+nav a {
   text-decoration: none;
   color: #333;
-  font-size: 18px;
-  font-weight: 600;
-  transition: 0.3s ease;
+  font-size: 28px;
+  transition: 1s;
+  display: block;
 }
