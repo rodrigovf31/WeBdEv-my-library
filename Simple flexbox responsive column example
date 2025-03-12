@@ -1,0 +1,50 @@
+<!-- HTML Code --!>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="second.css">
+</head>
+
+<body>
+  <div class="box">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
+    <div>Six</div>
+  </div>
+
+</body>
+
+</html>
+
+/* CCS Code */
+:root {
+  --border-radius: 5px;
+  --main-color: #608ba8;
+  --border-main: 2px dotted var(var(--main-color));
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 2em;
+  border: var(--border-main);
+  border: 2px dotted #608ba8;
+}
+.box > * {
+  flex: 1;
+  padding: 20px;
+  border: 2px solid #608ba8;
+  border-radius: 5px;
+  background-color: rgba(96, 139, 168, 0.2);
+}
