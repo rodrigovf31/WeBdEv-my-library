@@ -1,43 +1,52 @@
-<!-- HTML CODE --!>
-        <header>
-          <nav>
-            <ul class="nav-link">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Docs</a></li>
-              <li><a href="#">Contacts</a></li>
-            </ul>
-          </nav>
-        </header>
-
-/* CSS CODE */
-
-header {
-  background-color: #f0f0f0;
-  padding: 30px 20px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-ul {
-  /*No need for display: flex here; it's the *header* that controls the overall layout */
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
+<!-- HTML Code --!>
+<body>
+  <nav class="navbar">
+    <div class="logo">LOGO</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Docs</a></li>
+    </ul>
+  </nav>
+</body>
+/* CSS Code */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.navbar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  height: 150px;
 }
-nav li {
-  margin: 0 30px;
+.logo {
+  font-size: 4.5rem;
+  font-weight: 900;
 }
-nav a {
+/* remove default list styling */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 3.5rem;
+  margin: 30px;
+}
+.nav-links a {
+  color: #fff;
   text-decoration: none;
-  color: #333;
-  font-size: 28px;
-  transition: 1s;
-  display: block;
+  padding: 0.5rem;
+  transition: all 0.7s ease;
+  font-size: 25px;
+  padding: 30px;
+}
+.nav-links a:hover {
+  color: #ffd700;
 }
